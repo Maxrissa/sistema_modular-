@@ -7,6 +7,12 @@ from src.reporte_a import (
     promedio_gasto_general,
 )
 #16 al  20 
+from src.reporte_e import (
+    comida_mejor_satisfaccion,
+    comida_peor_satisfaccion,
+    relacion_precio_recomendacion,
+    relacion_tiempo_satisfaccion,
+    perfil_predominante,
 
 
 from src.reporte_b import (
