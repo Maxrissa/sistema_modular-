@@ -12,6 +12,11 @@ analizador.comida_mas_preferida()
 analizador.encuestados_por_comida()
 analizador.frecuencia_consumo_comun()
 analizador.promedio_gasto_general()
+analizador.promedio_gasto_por_comida()
+analizador.satisfaccion_producto()
+analizador.satisfaccion_servicio()
+analizador.calificacion_general()
+analizador.distribucion_precios()
 
 #16 al 20 
 analizador.comida_mejor_satisfaccion()

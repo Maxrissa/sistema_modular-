@@ -28,3 +28,13 @@ class Encuestado:
 
     def obtener_frecuencia_consumo(self):
         return self.frecuencia_consumo
+    
+    def obtener_satisfaccion_producto(self):
+        return self.satisfaccion_producto
+
+    def obtener_satisfaccion_servicio(self):
+        return self.satisfaccion_servicio
+
+    def obtener_tiempo_entrega(self):
+        return self.tiempo_entrega
+
