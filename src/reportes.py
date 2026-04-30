@@ -7,6 +7,14 @@ from src.reporte_a import (
     promedio_gasto_general,
 )
 
+from src.reporte_b import (
+    promedio_gasto_por_comida,
+    satisfaccion_producto,
+    satisfaccion_servicio,
+    calificacion_general,
+    distribucion_precios,
+)
+
 
 class AnalizarEncuestados:
     def __init__(self, lista_objetos):
@@ -26,3 +34,20 @@ class AnalizarEncuestados:
 
     def promedio_gasto_general(self):
         promedio_gasto_general(self.encuestados)
+    
+    def promedio_gasto_por_comida(self):
+        promedio_gasto_por_comida(self.encuestados)
+
+    def satisfaccion_producto(self):
+        satisfaccion_producto(self.encuestados)
+
+    def satisfaccion_servicio(self):
+        satisfaccion_servicio(self.encuestados)
+
+    def calificacion_general(self):
+        calificacion_general(self.encuestados)
+
+    def distribucion_precios(self):
+        distribucion_precios(self.encuestados)
+
+
