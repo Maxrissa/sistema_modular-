@@ -6,13 +6,6 @@ from src.reporte_a import (
     frecuencia_consumo_comun,
     promedio_gasto_general,
 )
-#16 al  20 
-from src.reporte_e import (
-    comida_mejor_satisfaccion,
-    comida_peor_satisfaccion,
-    relacion_precio_recomendacion,
-    relacion_tiempo_satisfaccion,
-    perfil_predominante,
 
 
 from src.reporte_b import (
@@ -23,6 +16,13 @@ from src.reporte_b import (
     distribucion_precios,
 )
 
+#16 al  20 
+from src.reporte_e import (
+    comida_mejor_satisfaccion,
+    comida_peor_satisfaccion,
+    relacion_precio_recomendacion,
+    relacion_tiempo_satisfaccion,
+    perfil_predominante,
 
 class AnalizarEncuestados:
     def __init__(self, lista_objetos):
