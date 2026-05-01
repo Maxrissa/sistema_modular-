@@ -14,6 +14,14 @@ from src.reporte_b import (
     distribucion_precios,
 )
 
+# 11 al 15 
+from src.reporte_c import (
+    distribucion_tiempo_entrega, 
+    porcentaje_volveria_comprar, 
+    nps_general, 
+    nps_por_comida
+)
+
 # 16 al 20
 from src.reporte_e import (
     comida_mejor_satisfaccion,
@@ -73,3 +81,20 @@ class AnalizarEncuestados:
 
     def perfil_predominante(self):
         perfil_predominante(self.encuestados)
+
+
+    # REPORTES 11 AL 15 (Conectados a reporte_c)
+
+    def distribucion_tiempo_entrega(self):
+        distribucion_tiempo_entrega(self.encuestados)
+
+    def porcentaje_volveria_comprar(self):
+        porcentaje_volveria_comprar(self.encuestados)
+
+    def nps_general(self):
+        nps_general(self.encuestados)
+
+    def nps_por_comida(self):
+        nps_por_comida(self.encuestados)
+        
+
