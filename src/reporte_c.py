@@ -1,11 +1,8 @@
-# reporte 11 al 15
+# ... (Aquí arriba están los reportes del 1 al 10)
 
-from .modelos import Encuestado
-
-class ReporteC:
-    def __init__(self, encuestados):
-        self.encuestados = encuestados
-
+    # ----------------------------------------
+    # REPORTES 11 AL 15
+    # ----------------------------------------
     def distribucion_tiempo_entrega(self):
         conteo = {}
         for e in self.encuestados:
