@@ -6,8 +6,6 @@ from src.reporte_a import (
     frecuencia_consumo_comun,
     promedio_gasto_general,
 )
-
-
 from src.reporte_b import (
     promedio_gasto_por_comida,
     satisfaccion_producto,
@@ -16,13 +14,15 @@ from src.reporte_b import (
     distribucion_precios,
 )
 
-#16 al  20 
+# 16 al 20
 from src.reporte_e import (
     comida_mejor_satisfaccion,
     comida_peor_satisfaccion,
     relacion_precio_recomendacion,
     relacion_tiempo_satisfaccion,
     perfil_predominante,
+)
+
 
 class AnalizarEncuestados:
     def __init__(self, lista_objetos):
@@ -42,7 +42,7 @@ class AnalizarEncuestados:
 
     def promedio_gasto_general(self):
         promedio_gasto_general(self.encuestados)
-    
+
     def promedio_gasto_por_comida(self):
         promedio_gasto_por_comida(self.encuestados)
 
@@ -58,10 +58,8 @@ class AnalizarEncuestados:
     def distribucion_precios(self):
         distribucion_precios(self.encuestados)
 
-
-
-#16-20
-def comida_mejor_satisfaccion(self):
+    # 16-20
+    def comida_mejor_satisfaccion(self):
         comida_mejor_satisfaccion(self.encuestados)
 
     def comida_peor_satisfaccion(self):

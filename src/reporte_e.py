@@ -35,9 +35,12 @@ def comida_mejor_satisfaccion(encuestados):
     mejor = max(promedios, key=promedios.get)
 
     # Imprime el resultado con el nombre de la comida y su promedio
-    print(f"Reporte 16 - Comida con mejor satisfacción: {mejor} ({promedios[mejor]:.2f})")
-    
-#==============================================================================================
+    print(
+        f"Reporte 16 - Comida con mejor satisfacción: {mejor} ({promedios[mejor]:.2f})"
+    )
+
+
+# ==============================================================================================
 # REPORTE 17
 # Define una función que recibe la lista de encuestados
 def comida_peor_satisfaccion(encuestados):
@@ -78,8 +81,8 @@ def comida_peor_satisfaccion(encuestados):
     # Imprime el resultado con el nombre de la comida y su promedio
     print(f"Reporte 17 - Comida con menor satisfacción: {peor} ({promedios[peor]:.2f})")
 
-#==============================================================================================
-    
+
+# ==============================================================================================
 # REPORTE 18
 # Define una función que recibe la lista de encuestados
 def relacion_precio_recomendacion(encuestados):
@@ -115,8 +118,8 @@ def relacion_precio_recomendacion(encuestados):
         # Imprime el resultado con el promedio formateado a 2 decimales
         print(f"  {precio}: promedio recomendación = {promedio:.2f}")
 
-#==============================================================================================
 
+# ==============================================================================================
 # REPORTE 19
 # Define una función que recibe la lista de encuestados
 def relacion_tiempo_satisfaccion(encuestados):
@@ -151,9 +154,10 @@ def relacion_tiempo_satisfaccion(encuestados):
 
         # Imprime el resultado con el promedio formateado a 2 decimales
         print(f"  {tiempo}: satisfacción promedio = {promedio:.2f}")
-#==============================================================================================
 
-  # REPORTE 20
+
+# ==============================================================================================
+# REPORTE 20
 # Define una función que recibe la lista de encuestados
 def perfil_predominante(encuestados):
 

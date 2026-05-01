@@ -6,12 +6,13 @@ datos_crudos = leer_datos("encuestas.csv")
 encuestados = [Encuestado(dato) for dato in datos_crudos]
 
 analizador = AnalizarEncuestados(encuestados)
-
+# reportes diego
 analizador.total_encuestados()
 analizador.comida_mas_preferida()
 analizador.encuestados_por_comida()
 analizador.frecuencia_consumo_comun()
 analizador.promedio_gasto_general()
+# reportes DAniella
 analizador.promedio_gasto_por_comida()
 analizador.satisfaccion_producto()
 analizador.satisfaccion_servicio()
