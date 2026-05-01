@@ -18,6 +18,13 @@ analizador.satisfaccion_servicio()
 analizador.calificacion_general()
 analizador.distribucion_precios()
 
+# REPORTES 11 AL 15
+reportes_xavi = ReporteC(encuestados)
+reportes_xavi.distribucion_tiempo_entrega()
+reportes_xavi.porcentaje_volveria_comprar()
+reportes_xavi.nps_general()
+reportes_xavi.nps_por_comida()
+
 # Reporte 16:
 # Calcula cuál es la comida con mayor nivel de satisfacción promedio,
 # agrupando los datos por tipo de comida y sacando el promedio de satisfacción del producto.
