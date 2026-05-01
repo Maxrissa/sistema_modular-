@@ -32,7 +32,7 @@ def comida_mejor_satisfaccion(encuestados):
         promedios[comida] = suma[comida] / conteo[comida]
 
     # Encuentra la comida con el mayor promedio de satisfacción
-    mejor = max(promedios, key=promedios.get)
+    mejor = max(promedios, key=lambda comida: promedios[comida])
 
     # Imprime el resultado con el nombre de la comida y su promedio
     print(
@@ -76,7 +76,7 @@ def comida_peor_satisfaccion(encuestados):
         promedios[comida] = suma[comida] / conteo[comida]
 
     # Encuentra la comida con el menor promedio de satisfacción
-    peor = min(promedios, key=promedios.get)
+    peor = min(promedios, key=lambda comida: promedios[comida])
 
     # Imprime el resultado con el nombre de la comida y su promedio
     print(f"Reporte 17 - Comida con menor satisfacción: {peor} ({promedios[peor]:.2f})")
@@ -183,10 +183,12 @@ def perfil_predominante(encuestados):
         conteo_frecuencia[frecuencia] = conteo_frecuencia.get(frecuencia, 0) + 1
 
     # Obtiene la comida más repetida (la más popular)
-    comida_top = max(conteo_comida, key=conteo_comida.get)
+    comida_top = max(conteo_comida, key=lambda comida: conteo_comida[comida])
 
     # Obtiene la frecuencia más repetida
-    frecuencia_top = max(conteo_frecuencia, key=conteo_frecuencia.get)
+    frecuencia_top = max(
+        conteo_frecuencia, key=lambda frecuencia: conteo_frecuencia[frecuencia]
+    )
 
     # Imprime el título del reporte
     print("\nReporte 20 - Perfil predominante del consumidor:")

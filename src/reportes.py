@@ -14,6 +14,14 @@ from src.reporte_b import (
     distribucion_precios,
 )
 
+# 11 al 15
+from src.reporte_c import (
+    distribucion_tiempo_entrega,
+    porcentaje_volveria_comprar,
+    nps_general,
+    nps_por_comida,
+)
+
 # 16 al 20
 from src.reporte_e import (
     comida_mejor_satisfaccion,
@@ -58,18 +66,31 @@ class AnalizarEncuestados:
     def distribucion_precios(self):
         distribucion_precios(self.encuestados)
 
+    # 11-15
+    def distribucion_tiempo_entrega(self):
+        distribucion_tiempo_entrega(self.encuestados)
+
+    def porcentaje_volveria_comprar(self):
+        porcentaje_volveria_comprar(self.encuestados)
+
+    def nps_general(self):
+        nps_general(self.encuestados)
+
+    def nps_por_comida(self):
+        nps_por_comida(self.encuestados)
+
     # 16-20
-    # def comida_mejor_satisfaccion(self):
-    #    comida_mejor_satisfaccion(self.encuestados)
+    def comida_mejor_satisfaccion(self):
+        comida_mejor_satisfaccion(self.encuestados)
 
-    # def comida_peor_satisfaccion(self):
-    #    comida_peor_satisfaccion(self.encuestados)
+    def comida_peor_satisfaccion(self):
+        comida_peor_satisfaccion(self.encuestados)
 
-    # def relacion_precio_recomendacion(self):
-    #    relacion_precio_recomendacion(self.encuestados)
+    def relacion_precio_recomendacion(self):
+        relacion_precio_recomendacion(self.encuestados)
 
-    # def relacion_tiempo_satisfaccion(self):
-    #    relacion_tiempo_satisfaccion(self.encuestados)
+    def relacion_tiempo_satisfaccion(self):
+        relacion_tiempo_satisfaccion(self.encuestados)
 
-    # def perfil_predominante(self):
-    #    perfil_predominante(self.encuestados)
+    def perfil_predominante(self):
+        perfil_predominante(self.encuestados)
