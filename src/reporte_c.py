@@ -70,5 +70,4 @@ def nps_por_comida(encuestados):
         nps = (
             (valores["promotores"] - valores["detractores"]) / valores["total"]
         ) * 100
-        print(f"  {comida}: {nps:.1f}")
-
+        print(f"  {comida}: {abs(nps):.1f}")
