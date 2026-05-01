@@ -1,12 +1,12 @@
-# ... (Aquí arriba están los reportes del 1 al 10)
-
-    # ----------------------------------------
-    # REPORTES 11 AL 15
-    # ----------------------------------------
+# Reporte 11 al 15
     def distribucion_tiempo_entrega(self):
         conteo = {}
         for e in self.encuestados:
             tiempo = e.tiempo_entrega
+            # Validación: si el dato viene vacío (None) en el CSV
+            if not tiempo:
+                tiempo = "No especificado"
+                
             conteo[tiempo] = conteo.get(tiempo, 0) + 1
         
         total = len(self.encuestados)
@@ -16,12 +16,14 @@
             print(f"  {categoria}: {cantidad} ({porcentaje:.1f}%)")
 
     def porcentaje_volveria_comprar(self):
-        si = sum(1 for e in self.encuestados if e.volveria_comprar.strip().lower() in ["sí", "si"])
+        # Usamos str(e.volveria_comprar) para evitar que el programa se caiga si el valor es None
+        si = sum(1 for e in self.encuestados if str(e.volveria_comprar).strip().lower() in ["sí", "si"])
         total = len(self.encuestados)
         porcentaje = (si / total) * 100
         print(f"\nReporte 12 - Porcentaje que volvería a comprar: {porcentaje:.1f}%")
 
     def nps_general(self):
+        # e.recomendaria ya es un int gracias a tu __init__, se puede evaluar directamente
         promotores = sum(1 for e in self.encuestados if e.recomendaria >= 9)
         detractores = sum(1 for e in self.encuestados if e.recomendaria <= 6)
         pasivos = len(self.encuestados) - promotores - detractores
@@ -35,6 +37,10 @@
         datos = {}
         for e in self.encuestados:
             comida = e.comida_preferida
+            # Validación: si el dato viene vacío en el CSV
+            if not comida:
+                comida = "No especificado"
+                
             if comida not in datos:
                 datos[comida] = {"promotores": 0, "detractores": 0, "total": 0}
             
