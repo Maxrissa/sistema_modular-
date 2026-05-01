@@ -29,24 +29,24 @@ reportes_xavi.nps_por_comida()
 # Reporte 16:
 # Calcula cuál es la comida con mayor nivel de satisfacción promedio,
 # agrupando los datos por tipo de comida y sacando el promedio de satisfacción del producto.
-analizador.comida_mejor_satisfaccion()
-
-# Reporte 17:
-# Determina la comida con menor satisfacción promedio,
-# usando el mismo cálculo pero seleccionando el valor más bajo.
-analizador.comida_peor_satisfaccion()
-
-# Reporte 18:
-# Analiza la relación entre la percepción de precios (alto, medio, bajo)
-# y el nivel de recomendación (NPS), calculando promedios por categoría.
-analizador.relacion_precio_recomendacion()
-
-# Reporte 19:
-# Evalúa cómo influye el tiempo de entrega (rápido, normal, lento)
-# en la satisfacción del producto, mostrando promedios por tipo de entrega.
-analizador.relacion_tiempo_satisfaccion()
-
-# Reporte 20:
-# Identifica el perfil predominante del consumidor,
-# determinando la comida más preferida y la frecuencia de consumo más común.
-analizador.perfil_predominante()
+# analizador.comida_mejor_satisfaccion()
+#
+## Reporte 17:
+## Determina la comida con menor satisfacción promedio,
+## usando el mismo cálculo pero seleccionando el valor más bajo.
+# analizador.comida_peor_satisfaccion()
+#
+## Reporte 18:
+## Analiza la relación entre la percepción de precios (alto, medio, bajo)
+## y el nivel de recomendación (NPS), calculando promedios por categoría.
+# analizador.relacion_precio_recomendacion()
+#
+## Reporte 19:
+## Evalúa cómo influye el tiempo de entrega (rápido, normal, lento)
+## en la satisfacción del producto, mostrando promedios por tipo de entrega.
+# analizador.relacion_tiempo_satisfaccion()
+#
+## Reporte 20:
+## Identifica el perfil predominante del consumidor,
+## determinando la comida más preferida y la frecuencia de consumo más común.
+# analizador.perfil_predominante()
