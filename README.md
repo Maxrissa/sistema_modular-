@@ -18,22 +18,26 @@ conda env create -f environment.yml
 
 sistema_modular/
 │
-├── src/                Codigo fuente  
-├── prueba/             Validacion del entorno  
-├── encuestas.csv       Datos  
+├── src/                                      Codigo fuente  
+├── prueba/                                   Validacion del entorno  
+├── encuestas.csv                             Datos de prueba  
+├── encuesta_restaurantes_20000_respuestas.csv Datos de encuesta  
 │
-├── environment.yml     Dependencias  
-├── main.py             Ejecucion principal  
+├── environment.yml                           Dependencias  
+├── main.py                                   Ejecucion principal  
 └── README.md  
 
 ## Ejecucion
 
 python main.py
-Validacion del entorno
-python prueba/validacion_entorno.py
-Reproducibilidad
 
-## El entorno puede ser replicado con:
+## Validacion del entorno
+
+python prueba/validacion_entorno.py
+
+## Reproducibilidad
+
+El entorno puede ser replicado con:
 
 conda env create -f environment.yml
 
