@@ -16,16 +16,16 @@ conda env create -f environment.yml
 
 ## Estructura del proyecto
 
+```text
 sistema_modular/
-│
-├── src/                                      Codigo fuente  
-├── prueba/                                   Validacion del entorno  
-├── encuestas.csv                             Datos de prueba  
-├── encuesta_restaurantes_20000_respuestas.csv Datos de encuesta  
-│
-├── environment.yml                           Dependencias  
-├── main.py                                   Ejecucion principal  
-└── README.md  
+├── src/                         Codigo fuente
+├── prueba/                      Validacion del entorno
+├── encuestas.csv               Datos de prueba
+├── encuesta_restaurantes_20000_respuestas.csv  Datos de encuesta
+├── environment.yml             Dependencias
+├── main.py                     Ejecucion principal
+└── README.md
+``` 
 
 ## Ejecucion
 
