@@ -3,7 +3,12 @@
 Sistema modular desarrollado en Python para el analisis de encuestas de consumo en restaurantes
 
 El proyecto procesa datos desde archivos CSV, modela encuestados y genera reportes estadisticos
+**Integrantes:**  
 
+- Daniella Marissa Navarro Araniva
+- Diego Alejandro Escobar Barahona
+
+**Repositorio:**    https://github.com/Maxrissa/sistema_modular-.git
 
 ## Creacion del entorno:
 
